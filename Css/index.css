@@ -1,0 +1,16 @@
+.float__left{
+    float:left;
+    width: 50%;
+    padding: 20px;
+    background-color: red;
+    box-sizing: border-box;
+}
+
+.float__right{
+    float: right;
+    width: 20%;
+    padding: 20px;
+    background-color: red;
+    box-sizing: border-box;
+}
+

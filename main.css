@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(99, 237, 99, 0.83);
+    height: 100vh;
+    font-family: "Poppins";
+}
+
+.card{
+    width: 320px;
+    height: 400px;
+    background-color: rgba(7, 6, 6, 0.611);
+    border-radius: 15px;
+    margin: 120px auto;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.card .card__icons{
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.card__icons>:nth-child(1),
+.card__icons>:nth-child(2){
+    cursor: pointer;
+}
+
+.card__icons > :nth-child(1):hover,
+.card__icons > :nth-child(2):hover{
+    transform: scale(1.2);
+}
+
+.card .card__img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card .card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__vocab {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card__describe{
+    text-align: center;
+    font-size: 15px;
+} 
+
+.card__exp{
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card:hover .card__exp{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card__type {
+    display: flex;
+}
+
+.card__type span{
+    font-weight: bold;
+}
+
+button{
+    border: none;
+}
+
+.card__typeName button{
+    font-size: 15px;
+    padding: 3px 8px;
+    background-color: rgb(192, 250, 33);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card__button button{
+    background-color: rgb(30, 229, 30);
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.card__more{
+    margin-top: 80px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.card:hover .card__more{
+    margin: 0;
+    visibility: visible;
+    transform: translateY(-45px);
+    opacity: 1;
+}
